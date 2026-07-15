@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #101846;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: #070A1B;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.social-list {
+  display: flex;
+  gap: 30px;
+}
+
+.logo-title {
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color .3s ease;
+}
+
+.logo-title:hover {
+  background-color: #C1A1D2;
+}
+
+.btn-menu {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.social-link {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color .3s ease;
+}
+
+.social-link:hover {
+  background-color: #C1A1D2;
+}
+
+.video-1 {
+  width: 250px;
+  height: 450px;
+  margin: 25px;
+  padding: 5px;
+}
+
+.video-img {
+  margin-bottom: 25px;
+}
+
+.video-link {
+  font-family: "Noto Sans JP", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #53A1CB;
+  border-radius: 33px;
+  margin: 25px;
+  padding: 25px;
+  border: 1px solid #53A1CB;
+  display: block;
+  width: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  transition: all .3s;
+}
+
+.video-link path {
+  transition: all .3s;
+}
+
+.video-link:hover {
+  color: #00ffd5;
+  border-color: #00ffd5;
+}
+
+.video-link:hover path {
+  fill: #53A1CB;
+}
+
+.video-link span {
+  position: relative;
+}
+
+.video-link span::before {
+  content: '';
+  width: 19px;
+  height: 22px;
+  background-image: url(../images/play-img.svg);
+  position: absolute;
+  top: -1px;
+  left: -32px;
+}
+
+.all-videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.video-1 {
+  width: 100%;
+  height: auto;
+  border-radius: 33px;
+}
